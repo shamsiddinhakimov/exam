@@ -5,7 +5,7 @@ function Products() {
   const [api, setApi] = useState(
     "https://strapi-store-server.onrender.com/api/products"
   );
-  let [data, setData] = useState([]);
+  const [data, setData] = useState([]);
   const [lang, setLang] = useState("uz");
 
   const { t, i18n } = useTranslation();
@@ -32,10 +32,7 @@ function Products() {
   useEffect(() => {
     fetch(api)
       .then((res) => res.json())
-      .then((data) => {
-        setData(data.data);
-        console.log(data.data, 1);
-      })
+      .then((data) => (setData(data.data)))
       .catch((err) => {
         console.log(err);
       });
@@ -44,8 +41,8 @@ function Products() {
   const [loader, setLoader] = useState(true);
   function Change(e) {
     setLoader(false);
-    setApi(`https://strapi-store-server.onrender.com/api/products + ?page=${e}`
-      
+    setApi(
+      `https://strapi-store-server.onrender.com/api/products + ?page=${e}`
     );
     setLoader(true);
   }
@@ -88,7 +85,8 @@ function Products() {
                 name="search"
                 className="input input-bordered input-sm"
               ></input>
-            </div><div className="form-control">
+            </div>
+            <div className="form-control">
               <label htmlFor="category" className="label">
                 <span className="label-text capitalize">
                   {t("select-category")}
@@ -160,7 +158,7 @@ function Products() {
                 className="range range-primary range-sm"
                 step="1000"
                 onChange={handleChange}
-                defaultValue={100000} 
+                defaultValue={100000}
               ></input>
               <div className="w-full flex justify-between text-xs px-2 mt-2">
                 <span className="font-bold text-md">0</span>
@@ -174,17 +172,16 @@ function Products() {
                 </span>
               </label>
               <input
-
                 type="checkbox"
                 name="shipping"
                 className="checkbox checkbox-primary checkbox-sm"
-                
               ></input>
             </div>
 
             <button className="btn btn-primary text-center">
               {t("search")}
-            </button><Link
+            </button>
+            <Link
               to="/products"
               className="w-auto btn btn-secondary text-center"
             >
@@ -222,13 +219,10 @@ function Products() {
                 );
               })
             ) : (
-              <>
+             
                 <p className=" text-center">Loading...</p>
-                <p className="text-center">Sorry it is not coming palceholder</p>
-              </>
-            
-              
-              
+                
+             
             )}
           </div>
           <div className="mt-16 flex justify-end">
