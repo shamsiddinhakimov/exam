@@ -38,13 +38,13 @@ function Products() {
       });
   }, [api]);
 
-  const [loader, setLoader] = useState(true);
+  
   function Change(e) {
-    setLoader(false);
+    
     setApi(
-      `https://strapi-store-server.onrender.com/api/products + ?page=${e}`
+      "https://strapi-store-server.onrender.com/api/products" + `?page=${e}`
     );
-    setLoader(true);
+   
   }
 
   function handleSubmit(e) {
@@ -60,6 +60,7 @@ function Products() {
       https://strapi-store-server.onrender.com/api/products?search=${searchbtn.current.value}&category=${categorybtn.current.value}&company=${companybtn.current.value}&order=${orderbtn.current.value}&price=${pricebtn.current.value}
     `);
   }
+  let [result,setResult] = useState(data)
   setTimeout(() => {
     console.log(api);
   }, 5000);
@@ -191,7 +192,7 @@ function Products() {
           <div className="pt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {data.length ? (
               data.map((products, index) => {
-                return loader == true ? (
+                return  (
                   <Link
                     to={""}
                     key={index}
@@ -214,9 +215,7 @@ function Products() {
                       <p className=" hidden">{products.attributes.category}</p>
                     </div>
                   </Link>
-                ) : (
-                  ""
-                );
+                ) 
               })
             ) : (
              
