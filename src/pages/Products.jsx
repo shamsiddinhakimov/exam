@@ -222,7 +222,13 @@ function Products() {
                 );
               })
             ) : (
-              <p className="">Loading...</p>
+              <>
+                <p className=" text-center">Loading...</p>
+                <p className="text-center">Sorry it is not coming palceholder</p>
+              </>
+            
+              
+              
             )}
           </div>
           <div className="mt-16 flex justify-end">
