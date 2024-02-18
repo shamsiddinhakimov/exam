@@ -1,0 +1,72 @@
+{
+    "en": {
+      "translation": {
+        "home":"Home",
+        "about":"About",
+        "products":"Products",
+        "letter-1":"We are changing the way people shop",
+        "letter-2":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias pariatur totam minima ipsum facere iusto, velit voluptate, illum a optio repellendus rerum eaque iure vel odit, numquam laudantium ea eos. Praesentium tempore quae eos eligendi incidunt ipsum ducimus laudantium? Assumenda, labore fugiat libero necessitatibus deserunt iusto molestiae. Sequi, rem suscipit?",
+        "our-products":"Our Products",
+        "we-love":"We love",
+        "comfy":"comfy",
+        "letter-3":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quae quam blanditiis vitae, dolor non eveniet ipsum voluptatibus, quia optio aut! Perferendis ipsa cumque ipsam nostrum reprehenderit ad illo sed officiis ea tempore! Similique eos minima sit porro, ratione aspernatur!",
+        "search-product":"search product",
+        "select-category":"select category",
+        "select company":"select company",
+        "sort-by":"sort by",
+        "select-price":"select price",
+        "free-shipping":"free shipping",
+        "search":"search",
+        "reset":"reset",
+        "featured-products":"featured products"
+      }
+    },
+    "ru": {
+      "translation": {
+        "home":"Дом",
+        "about":"Про",
+        "contact":"Контакт",
+        "products":"Продукты",
+        "letter-1":"Мы меняем способ совершения покупок",
+        "letter-2":"Сам клиент, клиент сможет заниматься развитием компании. Другим необходимо все малейшее делать справедливо, он хочет удовольствия, его отталкивает выбор вещей и он ненавидит их по праву, никогда не хваля их. В настоящее время, что случилось, чтобы выбрать их, мы ведем хвалителя? Надо полагать, пусть он убежит от труда, освободится от жизненных потребностей и оставит его одного на неприятности. Продолжить, взяться за дело?",
+        "our-products":"Наши продукты",
+        "we-love":"Мы любим",
+        "comfy":"удобный",
+        "letter-3":"Заказчику очень важно обратить внимание на процесс адиписки. В то время, когда ласки жизни, боли не будет с удовольствиями, ведь выбор или! Терпя это, и за это она нас упрекала, но за свои тогдашние обязанности! Точно так же, пусть он будет самым маленьким, его раздражает разум!",
+        "search-product":"поиск продукта",
+        "select-category":"выберите категорию",
+        "select-company":"выбрать компанию",
+        "sort-by":"Сортировать по",
+        "select-price":"выберите цену",
+        "free-shipping":"бесплатная доставка",
+        "search":"поиск",
+        "reset":"перезагрузить",
+        "featured-products":"рекомендуемые продукты"
+        
+      }
+    },
+    "uz":{
+        "translation":{
+        "home":"Asosiy",
+        "about":"Haqida",
+        "contact":"Bog'lanish",
+        "products":"Mahsulotlar",
+        "letter-1":"Biz odamlarning xarid qilish uslubini o'zgartirmoqdamiz",
+        "letter-2":"Mijozning o'zi, mijoz kompaniyaning adipissingini davom ettirishi mumkin bo'ladi. Boshqalar uchun hamma kichik narsalarni shunchaki qilish kerak, u zavqlanishni xohlaydi, u narsalarni tanlashdan jirkanadi va ularni haq bilan yomon ko'radi, hech qachon maqtamaydi. Hozirgi vaqtda biz maqtovchini olib, ularni tanlashga nima bo'ldi? Taxmin qilish kerakki, u mehnatdan qochib, hayotiy ehtiyojlardan xalos bo'lsin va uni muammoga yolg'iz qoldiring. Kuzatib boring, masalani hal qilasizmi?",
+          "our-products":"Mahsulotlarimiz",
+          "we-love":"Biz sevamiz",
+          "comfy":"qulay",
+          "letter-3":"Mijoz uchun adipissing jarayoniga e'tibor berish juda muhimdir. Hayotning erkalash, dard rohatlariga bo'lmaydi, chunki tanlash yoki! Bunga chidab, u bizni buning uchun qoraladi, lekin o'sha paytdagi vazifalari uchun! Xuddi shunday, u eng kichigi bo'lsin, u aqlga sig'maydi!",
+          "search-product":"mahsulotni qidirish",
+          "select-category":"toifani tanlang",
+          "select-company":"kompaniyani tanlang",
+          "sort-by":"saralash turi",
+          "select-price":"narxni tanlang",
+          "free-shipping":"yetkazib berish bepul",
+          "search":"qidirmoq",
+          "reset":"qayta o'rnatish",
+          "featured-products":"ko'rsatilgan mahsulotlar"
+        }
+
+    }
+  }
