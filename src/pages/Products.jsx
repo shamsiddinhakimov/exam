@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useDispatch,useSelector } from "react-redux";
+
 function Products() {
   const [api, setApi] = useState(
     "https://strapi-store-server.onrender.com/api/products"
@@ -64,6 +66,14 @@ function Products() {
   setTimeout(() => {
     console.log(api);
   }, 5000);
+  const counter = useSelector(state => state.counter);
+  const dispatch = useDispatch();
+
+  function increment(){
+      dispatch({type:  'ADD',payload : 1})
+  }
+
+  
   return (
     <div className="div_header">
       <div className="div_width">
@@ -213,6 +223,7 @@ function Products() {
                         ${products.attributes.price}
                       </p>
                       <p className=" hidden">{products.attributes.category}</p>
+                      <button onClick={increment}>add</button>
                     </div>
                   </Link>
                 ) 

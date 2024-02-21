@@ -6,6 +6,7 @@ import hero3 from '../assets/hero3.webp'
 import hero4 from '../assets/hero4.webp'
 import { useTranslation } from 'react-i18next';
 import { useState,useEffect } from 'react'
+import { useDispatch,useSelector } from "react-redux";
 function Home() {
   let [data, setData] = useState([]);
   const [lang,setLang] = useState('uz');
@@ -30,6 +31,13 @@ function Home() {
     i18n.changeLanguage(e.target.value)
     localStorage.setItem('lang', e.target.value)
   };
+  const counter = useSelector(state => state.counter);
+  const dispatch = useDispatch();
+
+  function increment(){
+      dispatch({type:  'ADD',payload : 1})
+  }
+  
   
   return (
    <div className='div_header'>
@@ -87,6 +95,7 @@ function Home() {
                       <div className="card-body items-center text-center">
                         <p className="card-title capitalize tracking-wider">{products.attributes.title}</p>
                         <p className="text-secondary">${products.attributes.price}</p>
+                        <button onClick={increment}>add</button>
                       </div>
                     </Link>:""
                  );

@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import { NavLink, Link } from "react-router-dom"
 import { useTranslation } from 'react-i18next';
+import { useDispatch,useSelector } from "react-redux";
 function Header() {
   const [lang,setLang] = useState('uz');
   const { t, i18n } = useTranslation();
@@ -18,6 +19,15 @@ function Header() {
     i18n.changeLanguage(e.target.value)
     localStorage.setItem('lang', e.target.value)
   }
+
+
+  const counter = useSelector(state => state.counter);
+  const dispatch = useDispatch();
+
+  function increment(){
+      dispatch({type:  'ADD',payload : 1})
+  }
+  
   return (
     <div>
         <div className="div_header bg-base-200">
@@ -66,7 +76,9 @@ function Header() {
             <option value="ru">ru</option>
             <option value="en">en</option>
             </select>
+            <h2 className=" ml-2">{counter}</h2> 
             </div>
+            
               </div>
         </div>
     </div>
